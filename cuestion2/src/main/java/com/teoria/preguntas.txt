@@ -1,0 +1,10 @@
+¿Cuantas champions tiene el Real Madrid?
+¿Cuantas champions tiene el Atletico de Madrid?
+¿Cuantos mundiales ha ganado España?
+¿Cual es nuestro profesor favorito?
+¿Se puede usar un ArrayList en Java? (Si o No)
+¿En cuantos años minimo te puedes sacar un doble grado de FP?
+¿Cuantos litros de agua tienes que beber al dia?
+¿Cuantas lineas hay en League of Legends?
+¿Cual es la capital de España? (con mayuscula la primera)
+¿Cual es la capital de Brazil? (con mayuscula la primera)

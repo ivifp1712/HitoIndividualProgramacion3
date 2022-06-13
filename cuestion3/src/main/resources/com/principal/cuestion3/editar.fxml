@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.principal.cuestion3.EditController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Button layoutX="96.0" layoutY="395.0" mnemonicParsing="false" onAction="#cAdd" text="Cambiar vista a Añadir" />
+    <Label text="id: " />
+    <ChoiceBox fx:id="tid" layoutX="30.0" layoutY="67.0" onAction="#onRellenar" />
+    <Label text="Nombre: " />
+    <TextField fx:id="tnombre" layoutX="30.0" layoutY="67.0" />
+    <Label text="La fecha de envasado es: " />
+   <DatePicker fx:id="tfechaenvasado" />
+    <Label text="Unidades" />
+    <TextField fx:id="tunidades" layoutX="30.0" layoutY="414.0" />
+    <Label text="Precio" />
+    <TextField fx:id="tprecio" layoutX="30.0" layoutY="459.0" />
+    <Label text="Disponible" />
+   <ChoiceBox fx:id="tdisponible" prefWidth="150.0" />
+
+   <Button layoutX="96.0" layoutY="395.0" mnemonicParsing="false" onAction="#onEditar" text="Editar" />
+
+    <Button mnemonicParsing="false" onAction="#onVer" text="Actualizar" />
+    <Button mnemonicParsing="false" onAction="#onEliminar" text="Eliminar" />
+
+    <Label fx:id="errortext" text=""/>
+    <TableView fx:id="tabla" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn fx:id="id" prefWidth="75.0" text="id: " />
+            <TableColumn fx:id="nombre" prefWidth="75.0" text="Nombre: " />
+            <TableColumn fx:id="fenvasado" prefWidth="109.0" text="Envasado en: " />
+            <TableColumn fx:id="unidades" prefWidth="88.0" text="Unidades: " />
+            <TableColumn fx:id="precio" prefWidth="70.0" text="Precio: " />
+            <TableColumn fx:id="disponible" prefWidth="108.0" text="Disponible: " />
+        </columns>
+    </TableView>
+
+</VBox>
